@@ -9,6 +9,19 @@ h3 {
 .column {
     float: left;
     width: 50%;
+<<<<<<< HEAD
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button-center {
+    text-align: center;
+}
+=======
   }
   
   .row:after {
@@ -16,3 +29,4 @@ h3 {
     display: table;
     clear: both;
   }
+>>>>>>> b168465a1980e7c14d8b70eb9d73a2e490b03940
