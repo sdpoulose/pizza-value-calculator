@@ -1,6 +1,7 @@
 const electron = require('electron');
 const url = require('url');
 const path = require('path');
+const { appendFileSync } = require('fs');
 
 const {app, BrowserWindow} = electron;
 
@@ -17,5 +18,5 @@ app.on('ready', function() {
     }))
 });
 
-
+app.on('closed', () => app.exit());
 
