@@ -29,8 +29,6 @@ function calculateRates() {
     message = betterPizza + " has " + difference + "% more value than " + worsePizza + ". "
 
     // display difference
-    //document.documentElement.innerHTML(message);
-    //document.write(message);
     var h1 = document.createTextNode(message);
     document.body.appendChild(h1);
 }
