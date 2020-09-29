@@ -30,5 +30,7 @@ function calculateRates() {
 
     // display difference
     //document.documentElement.innerHTML(message);
-    document.write(message);
+    //document.write(message);
+    var h1 = document.createTextNode(message);
+    document.body.appendChild(h1);
 }
