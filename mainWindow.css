@@ -30,4 +30,8 @@ h3 {
 
 .invisible {
     background-color: transparent;
+    color: blue;
+    font-size: xx-large;
+    font-weight: bolder;
+    
 }
