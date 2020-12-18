@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title> Home </title>
-    <link rel = "stylesheet" href = "mainWindow.css">
-</head>
-<body class = "bg">
-    <h1> Pizza Value Calculator </h1>
 
-    <div class = "row" >
-        <div class = "column center" > 
-            <h3> Pizza 1 </h3> 
-            <form>
-                <label for = "price1"> Price ($): </label>
-                <br>
-                <input type = "number" id = "price1" name = "price1">
-                <br>
-                <br>
-                <label for = "diameter1"> Diameter (inches): </label>
-                <br>
-                <input type = "number" id = "diameter1" name = "diameter1">
-                <br>
-            </form>
-        </div>
-        <div class = "column center" > 
-            <h3> Pizza 2 </h3> 
-            <form>
-                <label for = "price2"> Price ($): </label>
-                <br>
-                <input type = "number" id = "price2" name = "price2">
-                <br>
-                <br>
-                <label for = "diameter2"> Diameter (inches): </label>
-                <br>
-                <input type = "number" id = "diameter2" name = "diameter2">
-                <br>
-            </form>
-        </div>
-    </div>
-    <br>
+    <head>
+        <title> Home </title>
+        <link rel="stylesheet" href="mainWindow.css">
+    </head>
 
-    <script src = "mainWindow.js"> </script>
-    <button onclick = "calculateRates()" > Calculate </button>
-    <br>
-    <br>
-    <button onclick = window.location.reload(); > Reload </button>
-    
-</body>
+    <body class="bg">
+        <h1> Pizza Value Calculator </h1>
+
+        <div class="row">
+            <div class="column center">
+                <input type="text" default="Enter name of Pizza 1"></input>
+                <form>
+                    <label for="price1"> Price ($): </label>
+                    <br>
+                    <input type="number" id="price1" name="price1">
+                    <br>
+                    <br>
+                    <label for="diameter1"> Diameter (inches): </label>
+                    <br>
+                    <input type="number" id="diameter1" name="diameter1">
+                    <br>
+                </form>
+            </div>
+            <div class="column center">
+                <input type="text" default="Enter name of Pizza 2"></input>
+                <form>
+                    <label for="price2"> Price ($): </label>
+                    <br>
+                    <input type="number" id="price2" name="price2">
+                    <br>
+                    <br>
+                    <label for="diameter2"> Diameter (inches): </label>
+                    <br>
+                    <input type="number" id="diameter2" name="diameter2">
+                    <br>
+                </form>
+            </div>
+        </div>
+        <br>
+
+        <script src="mainWindow.js"> </script>
+        <button onclick="calculateRates()"> Calculate </button>
+        <br>
+        <br>
+        <button onclick=window.location.reload();> Reload </button>
+
+    </body>
+
 </html>
