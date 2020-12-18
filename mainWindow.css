@@ -27,3 +27,7 @@ h3 {
 .bg {
     background-image: url(https://freethoughtblogs.com/pharyngula/files/2017/01/PineappleJalapenoPizza.jpg);
 }
+
+.invisible {
+    background-color: transparent;
+}
