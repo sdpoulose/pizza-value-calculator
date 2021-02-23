@@ -1,22 +1,18 @@
-const electron = require('electron');
-const url = require('url');
-const path = require('path');
-const { appendFileSync } = require('fs');
+const { app, BrowserWindow } = require('electron');
 
-const {app, BrowserWindow} = electron;
+function createWindow() {
+    const window = new BrowserWindow({
+        width: 1200,
+        height: 800,
+        backgroundColor: "white",
+        webPreferences: {
+            nodeIntegration: true,
+            worldSafeExecuteJavaScript: true,
+            contextIsolation: true
+        }
+    })
 
-let mainWindow;
+    window.loadFile('index.html');
+}
 
-// listen for app to be ready
-app.on('ready', function() {
-    // create main window
-    mainWindow = new BrowserWindow({});
-    mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'mainWindow.html'),
-        protocol: 'file:',
-        slashes: true
-    }))
-});
-
-app.on('closed', () => app.exit());
-
+app.whenReady().then(createWindow)

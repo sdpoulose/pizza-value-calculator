@@ -1,22 +1,39 @@
 {
   "name": "pizza-value-calculator",
   "version": "1.0.0",
-  "description": "pizza value calculator desktop app",
+  "description": "A simple desktop application to analyze the value of pizza",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "watch": "webpack --config webpack.common.js --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sdpoulose/pizza-value-calculator.git"
   },
-  "author": "solomon",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sdpoulose/pizza-value-calculator/issues"
   },
   "homepage": "https://github.com/sdpoulose/pizza-value-calculator#readme",
   "dependencies": {
-    "electron": "^10.1.2"
+    "electron": "^11.3.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.0",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.0",
+    "webpack-cli": "^4.5.0"
   }
 }
