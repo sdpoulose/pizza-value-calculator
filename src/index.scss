@@ -1,6 +1,9 @@
 .cheese {
     background-image: url("./images/pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     margin: 0px;
+    padding: 0px;
 }
