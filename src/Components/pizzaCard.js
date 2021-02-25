@@ -4,7 +4,7 @@ class PizzaCard extends Component {
 
     render() {
         return (
-            <div>
+            <div className="pizza-card">
                 <form>
 
                     <input type="text" placeholder="Pizza"></input>
