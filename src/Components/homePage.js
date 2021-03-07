@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Crust from "./crust"
 import PizzaList from './pizzaList';
+import SubmitButton from './submitButton';
 
 class HomePage extends Component {
 
@@ -9,6 +10,7 @@ class HomePage extends Component {
             <div className="cheese">
                 <Crust />
                 <PizzaList />
+                <SubmitButton />
             </div>
         );
     }
