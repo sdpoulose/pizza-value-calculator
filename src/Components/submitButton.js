@@ -5,7 +5,7 @@ class SubmitButton extends Component {
     render() {
         return (
             <div>
-                <button>Submit</button>
+                <button className="submit">Submit</button>
             </div>
 
         );

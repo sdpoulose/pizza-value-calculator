@@ -4,8 +4,8 @@ class PizzaCard extends Component {
 
     render() {
         return (
-            <div className="pizza-card">
-                <form>
+            <span>
+                <form className="pizza-card">
 
                     <input type="text" placeholder="Pizza"></input>
                     <br />
@@ -14,7 +14,7 @@ class PizzaCard extends Component {
                     <input type="number" placeholder="Price"></input>
 
                 </form>
-            </div>
+            </span>
 
         );
     }
