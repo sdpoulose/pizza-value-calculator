@@ -8,7 +8,9 @@ class PizzaCard extends Component {
                 <form>
 
                     <input type="text" placeholder="Pizza"></input>
+                    <br />
                     <input type="number" placeholder="Diameter"></input>
+                    <br />
                     <input type="number" placeholder="Price"></input>
 
                 </form>
